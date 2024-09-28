@@ -1,0 +1,12 @@
+body{
+    background: pink;
+}
+
+.container {
+    background: #e2e2e2;
+}
+
+.profile {
+    border-radius: 50%;
+    width: 6rem;
+}
