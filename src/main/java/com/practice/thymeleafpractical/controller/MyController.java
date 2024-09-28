@@ -37,6 +37,8 @@ public class MyController {
 
     @GetMapping("/service")
     public String servicesHandler(Model model) {
+        model.addAttribute("title", "I like to eat Samosa");
+        model.addAttribute("subTitle", new Date().toString());
         return "service";
     }
     

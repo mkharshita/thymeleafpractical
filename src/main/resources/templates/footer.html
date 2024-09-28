@@ -6,9 +6,10 @@
     <title>Footer Template</title>
 </head>
 <body>
-    <footer id="fragmentTag" th:fragment="footer1">
+    <footer id="fragmentTag" th:fragment="footer1(title,subTitle)">
         <div class="container">
-            <h1>About LearnCode</h1>
+            <h1 th:text="${title}"></h1>
+            <h1 th:text="${subTitle}"></h1>
             <h2>Provide Good content about programming</h2>
             <h3>Let's learn together</h3>
         </div>

@@ -8,7 +8,7 @@
 <body>
     <h1>These are the services provided By me</h1>
 
-    <footer id="hostTag" th:insert="footer::footer1">
+    <footer id="hostTag" th:replace="footer::footer1(${title},${subTitle})">
         <!--You can use insert, replace, include-->
     </footer>
 </body>
