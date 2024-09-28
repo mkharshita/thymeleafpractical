@@ -34,6 +34,12 @@ public class MyController {
         model.addAttribute("myList", numbers);
         return "condition";
     }
+
+    @GetMapping("/service")
+    public String servicesHandler(Model model) {
+        return "service";
+    }
+    
     
     
 }
