@@ -9,9 +9,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.GetMapping;
 
-
-
-
 @Controller
 public class MyController {
 
@@ -28,5 +25,15 @@ public class MyController {
         model.addAttribute("names", names);
         return "iterate";
     }
+
+    @GetMapping("/condition")
+    public String getMethodName(Model model) {
+        model.addAttribute("isActive", true);
+        model.addAttribute("gender", "F");
+        List<Integer> numbers = List.of(45,78,90,56);
+        model.addAttribute("myList", numbers);
+        return "condition";
+    }
+    
     
 }
